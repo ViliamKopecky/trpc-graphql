@@ -1,0 +1,33 @@
+{
+	"name": "trpc-graphql",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"check": "npm run check-types && npm run lint && npm run test",
+		"check-types": "tsc --noEmit",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"ci": "npm run check && npm run build"
+	},
+	"author": "ViliamKopecky <vk@viliamkopecky.cz>",
+	"license": "Apache-2.0",
+	"dependencies": {
+		"@trpc/client": "^10.4.1",
+		"@trpc/server": "^10.4.1",
+		"graphql": "^16.6.0",
+		"trpc": "^0.11.3",
+		"tsx": "^3.12.1",
+		"typescript": "^4.9.3",
+		"vitest": "^0.25.3",
+		"zod": "^3.19.1"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"eslint": "^8.28.0"
+	}
+}
